@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
-import HeroVideo from '../../video/hero-video.mp4';
+import HeroVideo from '../../videos/hero-video.mp4';
 
 function Hero() {
 const [showControls, setShowControls] = useState(false);
