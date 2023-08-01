@@ -39,16 +39,17 @@ function Navbar() {
   return (
     <AppBar position='static' sx={{
       backgroundColor: '#16171a',
-      height: '2.5em',
+      height: '2em',
     }}>
-      <Container maxWidth='99'>
+      <Container maxWidth='100'>
         <Toolbar disableGutters sx={{
           width: '100%',
-          paddingTop: '.1em'
+          paddingTop: '0',
+          marginTop: '-0.3em'
         }}>
           <IconButton
             label='Page'
-            size='large'
+            size='small'
             // onClick={() => togglePage('Home')}
             sx={{
               display: 'flex',
@@ -58,9 +59,9 @@ function Navbar() {
           >
             <HomeOutlinedIcon
               sx={{
-                height: { xs: '1.2em', md: '1.5em', lg: '1.8em' },
-                width: { xs: '1.2em', md: '1.5em', lg: '1.8em' },
-                marginBottom: { xs: '-.7em', sm: '-.4em', md: '.1em', lg: '.4em' },
+                height: { xs: '0.8em', md: '1.2em', lg: '1.6em' },
+                width: { xs: '0.8em', md: '1.2em', lg: '1.6em' },
+                marginBottom: { xs: '-.7em', sm: '-.4em', md: '.1em', lg: '-0.4em' },
               }}
             />
           </IconButton>
@@ -103,7 +104,7 @@ function Navbar() {
                   >
                     <Typography
                       textAlign="center"
-                      sx={{ color: 'white', }}
+                      sx={{ color: '#16171A', }}
                     >
                       {item}
                       <Divider sx={{

@@ -17,7 +17,7 @@ const handleMouseOut = () => {
     <div
       style={{
         overflow: 'hidden',
-        width: '100vw',
+        width: '99vw',
         height: '12em',
         position: 'relative'
       }}>
