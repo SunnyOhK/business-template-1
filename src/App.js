@@ -3,6 +3,7 @@ import './App.css';
 import Hero from './components/Hero/Hero';
 import Header from './components/Header/Header';
 import Navbar from './components/NavBar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -15,14 +16,7 @@ function App() {
           Doris's Pressure Washin'
         </p>
         <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Footer></Footer>
       </header>
     </div>
   );
