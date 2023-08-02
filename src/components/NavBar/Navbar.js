@@ -6,23 +6,20 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Divider from '@mui/material/Divider';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-
-
-// import { PageContext } from '../../providers/PageProvider';
+import { useContext } from 'react';
+import { PageContext } from '../../providers/PageProvider';
 
 
 function Navbar() {
   console.log('navbar rendered')
- 
-  // const { page, togglePage } = useContext(PageContext);
+
+  const { page, togglePage } = useContext(PageContext);
   const menuItems = ['About', 'Contact', 'Projects']
 
 
@@ -41,16 +38,19 @@ function Navbar() {
       backgroundColor: '#16171a',
       height: '2em',
     }}>
-      <Container maxWidth='100'>
+      <Container maxWidth='100' sx={{ backgroundColor: '#16171A' }}>
         <Toolbar disableGutters sx={{
           width: '100%',
           paddingTop: '0',
-          marginTop: '-0.3em'
+          paddingBottom: '.3em',
+          marginBottom: '1.1em',
+          backgroundColor: '#16171A',
+          borderBottom: '1px solid white'
         }}>
           <IconButton
             label='Page'
             size='small'
-            // onClick={() => togglePage('Home')}
+            onClick={() => togglePage('Home')}
             sx={{
               display: 'flex',
               color: 'white',
@@ -99,7 +99,7 @@ function Navbar() {
                 {menuItems.map((item) => (
                   <MenuItem
                     key={item}
-                    // onClick={() => togglePage(item)}
+                    onClick={() => togglePage(item)}
                     label='Page'
                   >
                     <Typography
@@ -128,7 +128,7 @@ function Navbar() {
               {menuItems.map(item => (
                 <Button
                   key={item}
-                  // onClick={() => togglePage(item)}
+                  onClick={() => togglePage(item)}
                   label='Page'
                   sx={{
                     color: 'white',
