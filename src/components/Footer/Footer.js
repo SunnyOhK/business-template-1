@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Typography, Grid } from "@mui/material";
+import './style.css'
 
 function Footer() {
 
   return (
     <>
-      <Container maxWidth='100'
+      <Container className='footerContainer' maxWidth='100'
         sx={{
           display: 'flex',
           backgroundColor: '#16171A',

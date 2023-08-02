@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
-import Hero from './components/Hero/Hero';
 import Header from './components/Header/Header';
 import Navbar from './components/NavBar/Navbar';
 import Footer from './components/Footer/Footer';
+import Hero from './components/Hero/Hero';
+import { PageProvider } from './providers/PageProvider';
+import PageContainer from './pages';
+
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Navigate,
+// } from "react-router-dom";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <Hero></Hero>
-        <Navbar></Navbar>
-        <Header></Header>
-        <p>
-          Doris's Pressure Washin'
-        </p>
-        <img src={logo} className="App-logo" alt="logo" />
-        <Footer></Footer>
-      </header>
-    </div>
+    <PageProvider>
+      <Hero />
+      <Header />
+      <Navbar />
+      <PageContainer />
+      <Footer />
+    </PageProvider>
   );
 }
 

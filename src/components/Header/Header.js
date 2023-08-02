@@ -8,7 +8,7 @@ function Header() {
     <div style={{
       display: 'flex',
       width: '100vw',
-      // backgroundColor: 'pink',
+      backgroundColor: 'pink',
       justifyContent: 'end',
       alignItems: 'end'
     }}>

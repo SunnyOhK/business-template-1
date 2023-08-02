@@ -3,15 +3,15 @@ import ReactPlayer from 'react-player';
 import HeroVideo from '../../videos/hero-video.mp4';
 
 function Hero() {
-const [showControls, setShowControls] = useState(false);
+  const [showControls, setShowControls] = useState(false);
 
-const handleMouseOver = () => {
-  setShowControls(true);
-}
+  const handleMouseOver = () => {
+    setShowControls(true);
+  }
 
-const handleMouseOut = () => {
-  setShowControls(false);
-}
+  const handleMouseOut = () => {
+    setShowControls(false);
+  }
 
   return (
     <div
